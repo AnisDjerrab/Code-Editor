@@ -982,7 +982,9 @@ public class codeEditor {
                         }
                     }
                 }
-                plusgrandeligne = lignes[0];
+                if (lignes.length > 0) {
+                    plusgrandeligne = lignes[0];
+                } 
                 plusgrandeligne += "    ";
                 int textWidth = fm.stringWidth(plusgrandeligne); 
                 int newWidth = Math.max(200, textWidth + 20); 

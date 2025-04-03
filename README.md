@@ -1,5 +1,6 @@
 # Code-Editor
 Light and Smart Code Editor (LSCE) is a lightweight code editor built using java-swing and JNI.
+⚠️ to work, it needs to have java installed and added to the PATH.
 ## License
 MIT. Feel free to use, modify or reditribute this program however you like.
 ## Known Problems
