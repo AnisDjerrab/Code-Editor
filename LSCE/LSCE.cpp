@@ -28,7 +28,7 @@ int main() {
         home2[o] = cheminRelatif[i];
         o++;
     }
-    string command_1 = "java -cp \"" + string(home2) + "\" -Djava.library.path=. codeEditor";
+    string command_1 = "javaw -cp \"" + string(home2) + "\" -Djava.library.path=\"" + string(home2) + "\" codeEditor";
     char command[command_1.size()];
     int n = 0;
     for (int i = 0; i < command_1.size(); i++) {
@@ -36,6 +36,6 @@ int main() {
         n++;
     } 
     command[n + 1] = '\0';
-    CreateProcess(NULL, command, NULL, NULL, TRUE, DETACHED_PROCESS, NULL, home2, &startupInfo, &processInfo);
+    CreateProcess(NULL, command, NULL, NULL, TRUE, 0, NULL, home2, &startupInfo, &processInfo);
     return 0;
 }
